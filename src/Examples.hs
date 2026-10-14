@@ -27,8 +27,8 @@ leafCount t = case t of
 -- Старые версии доступны после построения новых.
 xs, ys, zs :: [Int]
 xs = [3, 4]
-ys = 1 : xs
-zs = 2 : ys
+ys = 1 : xs -- [1, 3 ,4]
+zs = 2 : ys -- [2, 1, 3, 4]
 
 -- Команды для make repl:
 -- :t Examples.Node
